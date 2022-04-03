@@ -30,7 +30,7 @@ import javax.persistence.UniqueConstraint;
 public class Customer {
 
     @Id
-    @SequenceGenerator(name = "customer_id_generator", sequenceName = "customer_id_sequence")
+    @SequenceGenerator(name = "customer_id_generator", sequenceName = "customer_id_sequence", allocationSize = 1)
     @GeneratedValue(strategy = GenerationType.IDENTITY, generator = "customer_id_generator")
     private Long id;
     private String name;
