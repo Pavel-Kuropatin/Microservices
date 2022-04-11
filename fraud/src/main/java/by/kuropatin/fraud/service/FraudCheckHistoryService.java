@@ -1,7 +1,7 @@
 package by.kuropatin.fraud.service;
 
+import by.kuropatin.clients.model.response.FraudCheckResponse;
 import by.kuropatin.fraud.model.FraudCheckHistory;
-import by.kuropatin.fraud.model.response.FraudCheckResponse;
 import by.kuropatin.fraud.repository.FraudCheckHistoryRepository;
 import org.springframework.stereotype.Service;
 
