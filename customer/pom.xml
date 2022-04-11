@@ -22,7 +22,7 @@
         <dependency>
             <groupId>by.kuropatin</groupId>
             <artifactId>clients</artifactId>
-            <version>1.0-SNAPSHOT</version>
+            <version>${parent.version}</version>
             <scope>compile</scope>
         </dependency>
 

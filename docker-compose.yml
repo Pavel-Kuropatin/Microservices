@@ -29,6 +29,21 @@ services:
       - postgres
     restart: unless-stopped
 
+  postgres_notifications:
+    container_name: postgres_notifications
+    image: postgres
+    environment:
+      POSTGRES_USER: username
+      POSTGRES_PASSWORD: password
+      PGDATA: /var/lib/postgres/data
+    volumes:
+      - postgres_notifications:/var/lib/postgres/data
+    ports:
+      - "5534:5432"
+    networks:
+      - postgres
+    restart: unless-stopped
+
   pgadmin:
     container_name: pgadmin
     image: dpage/pgadmin4
@@ -51,4 +66,5 @@ networks:
 volumes:
   postgres_customer:
   postgres_fraud:
+  postgres_notifications:
   pgadmin:
