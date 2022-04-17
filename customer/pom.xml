@@ -13,11 +13,6 @@
     <artifactId>customer</artifactId>
     <packaging>jar</packaging>
 
-    <properties>
-        <maven.compiler.source>${java.version}</maven.compiler.source>
-        <maven.compiler.target>${java.version}</maven.compiler.target>
-    </properties>
-
     <dependencies>
         <dependency>
             <groupId>by.kuropatin</groupId>
@@ -26,7 +21,6 @@
         <dependency>
             <groupId>by.kuropatin</groupId>
             <artifactId>clients</artifactId>
-            <scope>compile</scope>
         </dependency>
 
         <dependency>
@@ -59,5 +53,15 @@
             <scope>runtime</scope>
         </dependency>
     </dependencies>
+
+    <build>
+        <finalName>${project.artifactId}</finalName>
+        <plugins>
+            <plugin>
+                <groupId>org.springframework.boot</groupId>
+                <artifactId>spring-boot-maven-plugin</artifactId>
+            </plugin>
+        </plugins>
+    </build>
 
 </project>

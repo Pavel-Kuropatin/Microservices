@@ -13,9 +13,8 @@
     <artifactId>clients</artifactId>
     <packaging>jar</packaging>
 
-    <properties>
-        <maven.compiler.source>${java.version}</maven.compiler.source>
-        <maven.compiler.target>${java.version}</maven.compiler.target>
-    </properties>
+    <build>
+        <finalName>${project.artifactId}</finalName>
+    </build>
 
 </project>
