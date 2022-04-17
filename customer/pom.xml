@@ -21,8 +21,11 @@
     <dependencies>
         <dependency>
             <groupId>by.kuropatin</groupId>
+            <artifactId>amqp</artifactId>
+        </dependency>
+        <dependency>
+            <groupId>by.kuropatin</groupId>
             <artifactId>clients</artifactId>
-            <version>${parent.version}</version>
             <scope>compile</scope>
         </dependency>
 
@@ -33,6 +36,10 @@
         <dependency>
             <groupId>org.springframework.boot</groupId>
             <artifactId>spring-boot-starter-data-jpa</artifactId>
+        </dependency>
+        <dependency>
+            <groupId>org.springframework.boot</groupId>
+            <artifactId>spring-boot-starter-amqp</artifactId>
         </dependency>
         <dependency>
             <groupId>org.springframework.cloud</groupId>

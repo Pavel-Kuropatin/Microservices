@@ -30,6 +30,8 @@ public class Notification {
     @SequenceGenerator(name = "notification_id_generator", sequenceName = "notification_id_sequence", allocationSize = 1)
     @GeneratedValue(strategy = GenerationType.IDENTITY, generator = "notification_id_generator")
     private Long id;
+    private Long customerId;
+    private String customerEmail;
     private String message;
     private LocalDateTime created;
 }

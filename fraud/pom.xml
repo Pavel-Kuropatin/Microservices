@@ -22,7 +22,6 @@
         <dependency>
             <groupId>by.kuropatin</groupId>
             <artifactId>clients</artifactId>
-            <version>${parent.version}</version>
             <scope>compile</scope>
         </dependency>
 

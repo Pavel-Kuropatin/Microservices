@@ -1,6 +1,5 @@
-package by.kuropatin.clients.fraud;
+package by.kuropatin.clients.notification;
 
-import by.kuropatin.clients.model.response.NotificationResponse;
 import org.springframework.cloud.openfeign.FeignClient;
 import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.PostMapping;
@@ -9,5 +8,5 @@ import org.springframework.web.bind.annotation.PostMapping;
 public interface NotificationClient {
 
     @PostMapping(path = "/api/v1/notifications/{customerName}")
-    NotificationResponse saveNotification(@PathVariable("customerName") final String customerName);
+    void sendNotification(@PathVariable("customerName") final String customerName);
 }

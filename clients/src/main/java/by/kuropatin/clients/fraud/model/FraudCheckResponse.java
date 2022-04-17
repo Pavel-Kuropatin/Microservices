@@ -1,4 +1,4 @@
-package by.kuropatin.clients.model.response;
+package by.kuropatin.clients.fraud.model;
 
 public record FraudCheckResponse(boolean isFraudster) {
 

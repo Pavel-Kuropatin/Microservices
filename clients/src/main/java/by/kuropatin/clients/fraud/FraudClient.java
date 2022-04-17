@@ -1,6 +1,6 @@
 package by.kuropatin.clients.fraud;
 
-import by.kuropatin.clients.model.response.FraudCheckResponse;
+import by.kuropatin.clients.fraud.model.FraudCheckResponse;
 import org.springframework.cloud.openfeign.FeignClient;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PathVariable;
